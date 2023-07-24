@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Courier New", Courier, monospace;
+    background-image: url("bgimage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: deeppink;
+    /* margin-bottom: 20px; */
+}
+
+#flames input {
+    padding: 10px;
+    outline: none;
+    border: 2px solid #222;
+    border-radius: 1px;
+    margin: 40px 10px;
+    width: 300px;
+    transition: 0.3s ease-in;
+}
+#flames input:focus {
+    border: 2px solid red;
+}
+
+@media screen and (max-width: 768px) {
+    #flames input {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: row;
+    }
+}
+
+#flames .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#flames .btn button {
+    padding: 10px 8px;
+    font-size: 20px;
+    width: 200px;
+    border: 2px solid;
+    color: deeppink;
+    margin-bottom: 40px;
+    transition: ease-in 0.3s;
+}
+
+#flames .btn button:hover {
+    color: #fff;
+    background-color: deeppink;
+    border: 2px solid deeppink;
+}
+
+#flames #show {
+    display: none;
+    text-align: center;
+}
+#flames #show p {
+    font-weight: 800;
+    font-size: 20px;
+    color: rgb(239, 88, 113);
+}
+
+/* ---------------- */
+
+div + p{
+    position: absolute;
+    top: 89%;
+    color: pink;
+    left: 91%;
+}
